@@ -1,0 +1,28 @@
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: $background_darker;
+    line-height: 140%;
+    padding-left: 5%;
+}
+
+.logo_title_footer {
+    font-size: 90%;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 80%;
+}
+
+li:hover {
+    color: $color_primary;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer
+}

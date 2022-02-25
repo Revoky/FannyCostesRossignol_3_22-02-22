@@ -1,0 +1,16 @@
+button {
+    box-shadow: 0.5px 0.5px 4px grey;
+    border: none;
+    background: linear-gradient($color_secondary, $color_primary);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button:hover {
+    box-shadow: 0.5px 0.5px 3px black;
+    cursor: pointer;
+}

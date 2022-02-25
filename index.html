@@ -9,10 +9,10 @@
 	</head>
 
 
-	<body class="acceuil">
+	<body>
 
 		<header>
-			<h1 class="logo_title">HoMyFood</h1>>
+			<h1 class="logo_title">ohmyfood</h1>
 		</header>
 
 		<section class="presentation">
@@ -20,41 +20,46 @@
 				<div class="marker">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<input class="search_zone" type="text" name="location" size="17" placeholder="Paris, Belleville"/>
+				<div class="location_text">Paris, Belleville</div>
 			</div>
 
-			<h2>Réservez le menu qui vous convient</h2>
-			<h3>Découvrez des restaurants d'exception, <br/>sélectionnés par nos soins.</h3>
+			<div class="intro">
+				<h2 class="h2_home">Réservez le menu qui </br>vous convient</h2>
+				<h3 class="h3_home">Découvrez des restaurants d'exception, <br/>sélectionnés par nos soins.</h3>
 
-			<button class="button">Explorer nos restaurants</button>
+				<a href="#restaurants" class="explore_restaurants">
+					<button class="button_explore">Explorer nos restaurants</button>
+				</a>
+				
+			</div>
 		</section>
 
 		<nav>
-			<h4>Fonctionnement</h4>
+			<h4 class="h4_home">Fonctionnement</h4>
 
-			<a href="#" class="function_pick">
-				<div class="function_icon"><i class="fas fa-mobile-alt"></i></div>
-				<span>Choisissez un restaurant</span>
-			</a>
-			<a href="#" class="function_compose">
-				<div class="function_icon"><i class="far fa-list-ul"></i></div>
-				<span>Composez votre menu</span>
-			</a>
-			<a href="#" class="function_taste">
-				<div class="function_icon"><i class="fas fa-store"></i></div>
-				<span>Dégustez au restaurant</span>
-			</a>
+			<div class="functioning">
+				<div class="number_nav">1</div>
+				<div class="text_nav pick"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
+			</div>
+			<div class="functioning">
+				<div class="number_nav">2</div>
+				<div class="text_nav compose"><i class="far fa-list-ul"></i>Composez votre menu</div>
+			</div>
+			<div class="functioning">
+				<div class="number_nav">3</div>
+				<div class="text_nav taste"><i class="fas fa-store"></i>Dégustez au restaurant</div>
+			</div>
 		</nav>
 
-		<section class="restaurants">
-			<h4>Restaurants</h4>
+		<section id="restaurants" class="restaurants">
+			<h4 class="h4_home">Restaurants</h4>
 
 			<a href="./menu_palette_gout.html" class="card_menu">
 				<img src="images/restaurants/gout.jpg" alt="La palette du goût" class="img_restaurant"/>
 
 				<div class="restaurant_legend">
 					<div class="text_rl">
-						</div><strong>La palette du goût</strong> <br/> Ménilmontant
+						<strong>La palette du goût</strong> <br/> Ménilmontant
 					</div>
 					<div class="heart_rl">
 						<i class="fal fa-heart"></i>
@@ -67,7 +72,7 @@
 
 				<div class="restaurant_legend">
 					<div class="text_rl">
-						</div><strong>La note enchantée</strong> <br/> Charonne
+						<strong>La note enchantée</strong> <br/> Charonne
 					</div>
 					<div class="heart_rl">
 						<i class="fal fa-heart"></i>
@@ -80,7 +85,7 @@
 
 				<div class="restaurant_legend">
 					<div class="text_rl">
-						</div><strong>A la française</strong> <br/> Cité Rouge
+						<strong>A la française</strong> <br/> Cité Rouge
 					</div>
 					<div class="heart_rl">
 						<i class="fal fa-heart"></i>
@@ -93,7 +98,7 @@
 
 				<div class="restaurant_legend">
 					<div class="text_rl">
-						</div><strong>Le délice des sens</strong> <br/> Folie-Méricourt
+						<strong>Le délice des sens</strong> <br/> Folie-Méricourt
 					</div>
 					<div class="heart_rl">
 						<i class="fal fa-heart"></i>
@@ -103,7 +108,7 @@
 		</section>
 
 		<footer>
-			<h5 class="logo_title">HoMyFood</h5>
+			<h5 class="logo_title_footer">ohmyfood</h5>
 			<ul>
 				<li>
 					<div class="footer_icon"><i class="fas fa-utensils"></i></div>

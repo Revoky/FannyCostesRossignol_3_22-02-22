@@ -1,1 +1,22 @@
-css
+@font-face {
+  font-family: "roboto";
+  src: url("Roboto/Roboto-regular.ttf"), url("Roboto/Roboto-regular.woff"), url("Roboto/Roboto-regular.otf");
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url("Shrikhand/Shrikhand-Regular.ttf"), url("Shrikhand/Shrikhand-Regular.woff"), url("Shrikhand/Shrikhand-Regular.otf");
+}
+body {
+  font-family: roboto, serif;
+}
+
+.logo_title {
+  font-family: shrikhand, serif;
+}
+
+/*@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";*/
+
+/*# sourceMappingURL=style.css.map */

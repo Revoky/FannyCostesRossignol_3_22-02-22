@@ -1,0 +1,19 @@
+{
+  "name": "oc_projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Revoky/FannyCostesRossignol_3_22-02-22.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Revoky/FannyCostesRossignol_3_22-02-22/issues"
+  },
+  "homepage": "https://github.com/Revoky/FannyCostesRossignol_3_22-02-22#readme"
+}

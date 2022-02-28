@@ -1,18 +1,21 @@
-footer {
+footer, .footer_menus, .footer_note_enchantee {
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     background-color: $background_darker;
     line-height: 140%;
-    padding-left: 5%;
+}
+
+.home_footer {
+    padding: none;
 }
 
 .logo_title_footer {
     font-size: 90%;
-    font-weight: normal;
 }
 
 ul {
@@ -25,4 +28,12 @@ li:hover {
     color: $color_primary;
     text-shadow: 2px 2px 2px black;
     cursor: pointer
+}
+
+.footer_menus {
+    margin-top: 990px;
+}
+
+.footer_note_enchantee {
+    margin-top: 1070px;
 }

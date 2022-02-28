@@ -1,10 +1,23 @@
 header {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 13px;
-    border-bottom: solid rgb(200, 200, 200);
 }
 
 h1 {
     font-size: 180%;
+}
+
+.logo_header, .logo_header_menu {
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+.logo_header {
+    border-bottom: solid rgb(200, 200, 200);
+}
+
+.logo_header_menu {
+    border: none;
 }

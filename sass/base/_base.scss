@@ -12,13 +12,14 @@
          url("Shrikhand/Shrikhand-Regular.otf");
 }
 
-body {
+body, .la_palette_du_gout, .la_note_enchantee, .a_la_francaise, .delice_des_sens {
     font-family: "roboto", serif;
     margin: 0%;
 }
 
-.logo_title, .logo_title_footer {
+.logo_header, .logo_header_menu, .logo_section, .logo_footer {
     font-family: "shrikhand", serif;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,6 +29,7 @@ h1, h2, h3, h4, h5 {
 a {
     color: black;
     text-decoration: none;
+    width: 100%;
 }
 
 $color_primary: #9356DC;

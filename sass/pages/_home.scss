@@ -49,10 +49,33 @@
     display: flex;
     flex-direction: column;
     margin: 15px;
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 75%;
+    padding: 7px;
+    margin-top: 15px;
+    background-color: $color_tertiary;
+    color: darken($color_tertiary, 50%);
+    /*float: right;*/
 }
 
 .card_menu:hover {
     box-shadow: 2px 2px 5px black;
+}
+
+.name_card {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.description_card {
+    font-size: 90%;
+    font-weight: normal;
 }
 
 .img_restaurant {

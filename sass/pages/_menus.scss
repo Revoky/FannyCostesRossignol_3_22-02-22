@@ -42,7 +42,7 @@
 .card_food {
     border-radius: 20px;
     width: 85%;
-    height: 35px;
+    max-height: 35px;
     box-shadow: 1px 1px 2.5px black;
     display: flex;
     margin: auto;
@@ -54,6 +54,8 @@
 
 .text_food {
     position: relative;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
 }
 
 .price_food {
@@ -61,14 +63,7 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-}
-
-.name_food, .price_food {
+    align-items: flex-end;
     font-size: 100%;
     font-weight: bold;
-}
-
-.description_food {
-    font-size: 90%;
-    font-weight: normal;
 }

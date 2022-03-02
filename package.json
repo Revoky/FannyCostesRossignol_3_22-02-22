@@ -1,7 +1,6 @@
 {
   "name": "oc_projet3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./style.css"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/Revoky/FannyCostesRossignol_3_22-02-22/issues"
   },
-  "homepage": "https://github.com/Revoky/FannyCostesRossignol_3_22-02-22#readme"
+  "homepage": "https://github.com/Revoky/FannyCostesRossignol_3_22-02-22#readme",
+  "description": "",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
 }

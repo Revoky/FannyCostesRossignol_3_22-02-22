@@ -9,6 +9,13 @@
     background-color: $background;
 }
 
+.location_zone {
+    border: none;
+    background-color: $background;
+    font-size: 90%;
+    font-weight: bold;
+}
+
 .intro {
     background-color: $background_lighter;
 }
@@ -42,8 +49,11 @@
 }
 
 .card_menu {
+    width: 90%;
+}
+
+.card_menu_link {
     border-radius: 20px;
-    width: 100%;
     height: 235px;
     box-shadow: 1px 1px 2.5px black;
     display: flex;
@@ -54,6 +64,7 @@
 
 .new {
     position: absolute;
+    right: 15px;
     display: flex;
     justify-content: flex-end;
     font-size: 75%;
@@ -61,21 +72,10 @@
     margin-top: 15px;
     background-color: $color_tertiary;
     color: darken($color_tertiary, 50%);
-    /*float: right;*/
 }
 
-.card_menu:hover {
+.card_menu_link:hover {
     box-shadow: 2px 2px 5px black;
-}
-
-.name_card {
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.description_card {
-    font-size: 90%;
-    font-weight: normal;
 }
 
 .img_restaurant {
@@ -91,4 +91,14 @@
     padding-top: 10px;
     padding-left: 10px;
     line-height: 130%;
+}
+
+.name_card {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.description_card {
+    font-size: 90%;
+    font-weight: normal;
 }

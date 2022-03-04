@@ -5,6 +5,7 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<title>OhMyFood</title>
 	</head>
 
@@ -12,7 +13,9 @@
 	<body class="a_la_francaise">
 
 		<header>
-            <div class="arrow_icon"><i class="fa-solid fa-arrow-left"></i></div>
+            <a href="./index.html" class="back">
+                <div class="arrow_icon"><i class="fas fa-arrow-left"></i></div>
+            </a>
 			<a href="./index.html">
 				<h1 class="logo_header_menu">ohmyfood</h1>
 			</a>
@@ -21,7 +24,9 @@
         <section>
             <div class="foreground_menus">
                 <div class="menu_title">
-                    <div class="menu-title-heart"><i class="fa-solid fa-heart"></i></div>
+                    <a class="heart_menu">
+                        <i class="far fa-heart"></i>
+                    </a>
                     <h1 class="logo_section">À la française</h1>
                 </div>
 
@@ -119,19 +124,20 @@
             </div>
         </section>
 
-		<footer class="footer_menus">
-			<h3 class="logo_footer">ohmyfood</h3>
+		<footer class="menus_footer">
+			<h5 class="logo_footer">ohmyfood</h5>
 			<ul>
-				<li>
-					<div class="footer_icon"><i class="fa-solid fa-utensils"></i></div>
+				<li class="icon_text">
+					<div class="footer_icon"><i class="fas fa-utensils"></i></div>
 					Proposer un restaurant
 				</li>
-				<li>
-					<div class="footer_icon"><i class="fa-solid fa-handshake-angle"></i></div>
+				<li class="icon_text">
+					<div class="footer_icon"><i class="fas fa-hands-helping"></i></div>
 					Devenir partenaire
 				</li>
 				<li>Mentions légales</li>
 				<li>Contact</li>
+			</ul>
 		</footer>
 		
 	</body>

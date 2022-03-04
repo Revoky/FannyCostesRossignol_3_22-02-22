@@ -1,4 +1,4 @@
-footer, .footer_menus, .footer_note_enchantee {
+footer, .menus_footer, .footer_note_enchantee {
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 5%;
@@ -24,13 +24,17 @@ ul {
     font-size: 90%;
 }
 
+li {
+    width: 180px;
+}
+
 li:hover {
     color: $color_primary;
     text-shadow: 2px 2px 2px black;
     cursor: pointer
 }
 
-.footer_menus {
+.menus_footer{
     margin-top: 1025px;
 }
 

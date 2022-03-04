@@ -21,3 +21,19 @@ h1 {
 .logo_header_menu {
     border: none;
 }
+
+/*tablette*/
+
+@media screen and (min-width: 600px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    
+    .logo_header {
+        justify-content: flex-start;
+        border-bottom: none;
+    }
+}

@@ -76,3 +76,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/*tablette*/
+
+@media screen and (min-width: 600px) {
+    .h2_menus {
+        font-size: 100%;
+    }
+
+    .logo_section {
+        font-size: 160%;
+    }
+}

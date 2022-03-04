@@ -63,6 +63,19 @@ button:hover {
   height: 0px;
 }
 
+/*tablette*/
+@media screen and (min-width: 600px) {
+  .explore_restaurants_header {
+    visibility: visible;
+    right: 25%;
+  }
+
+  .explore_restaurants {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
 /*header*/
 .header {
   position: relative;
@@ -153,6 +166,20 @@ h1 {
   border: none;
 }
 
+/*tablette*/
+@media screen and (min-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  .logo_header {
+    justify-content: flex-start;
+    border-bottom: none;
+  }
+}
 aside {
   display: flex;
   flex-direction: column;
@@ -202,6 +229,19 @@ aside {
   background-color: #ede0f5;
 }
 
+/*tablette*/
+@media screen and (min-width: 600px) {
+  aside {
+    width: 38%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .title_phone {
+    visibility: hidden;
+    height: 0px;
+  }
+}
 footer, .menus_footer, .footer_note_enchantee {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -349,6 +389,46 @@ li:hover {
   font-weight: normal;
 }
 
+/*tablette*/
+@media screen and (min-width: 600px) {
+  /*presentation section*/
+  .section_aside {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 5%;
+  }
+
+  .presentation {
+    border-radius: 15px;
+    width: 60%;
+    border: solid 3px #9356DC;
+  }
+
+  .location {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .intro {
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 30px;
+    height: 140px;
+  }
+
+  /*menus section*/
+  .restaurants {
+    padding: 3%;
+  }
+
+  .h4_home {
+    width: 100%;
+  }
+
+  .card_menu {
+    width: 43%;
+    margin: 2.5%;
+  }
+}
 .background_menus {
   position: relative;
   z-index: 1;
@@ -428,6 +508,16 @@ li:hover {
   text-overflow: ellipsis;
 }
 
+/*tablette*/
+@media screen and (min-width: 600px) {
+  .h2_menus {
+    font-size: 100%;
+  }
+
+  .logo_section {
+    font-size: 160%;
+  }
+}
 /*@keyframes apparition {
     0% {
         transform: opacity(0);

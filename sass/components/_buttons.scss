@@ -30,3 +30,19 @@ button:hover {
     width: 0px;
     height: 0px;
 }
+
+/*tablette*/
+
+@media screen and (min-width: 600px) {
+
+    .explore_restaurants_header {
+        visibility: visible;
+        right: 25%;
+    }
+    
+    .explore_restaurants {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}

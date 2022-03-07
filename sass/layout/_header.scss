@@ -37,3 +37,11 @@ h1 {
         border-bottom: none;
     }
 }
+
+/*ordi*/
+
+@media screen and (min-width: 1000px) {
+    header {
+        border-bottom: solid rgb(200, 200, 200);
+    }
+}

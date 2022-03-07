@@ -130,6 +130,10 @@ button:hover {
   color: #9356DC;
 }
 
+.heart_menu:hover {
+  color: #9356DC;
+}
+
 /*.heart:focus {
     color: red;
 }*/
@@ -142,6 +146,12 @@ button:hover {
   margin-right: 10px;
 }
 
+/*ordi*/
+@media screen and (min-width: 1000px) {
+  .back {
+    visibility: hidden;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -178,6 +188,12 @@ h1 {
   .logo_header {
     justify-content: flex-start;
     border-bottom: none;
+  }
+}
+/*ordi*/
+@media screen and (min-width: 1000px) {
+  header {
+    border-bottom: solid #c8c8c8;
   }
 }
 aside {
@@ -286,6 +302,16 @@ li:hover {
   margin-top: 1100px;
 }
 
+/*ordi*/
+@media screen and (min-width: 1000px) {
+  .menus_footer {
+    margin-top: 860px;
+  }
+
+  .footer_note_enchantee {
+    margin-top: 950px;
+  }
+}
 /*presentation section*/
 .location, .intro {
   text-align: center;
@@ -452,6 +478,7 @@ li:hover {
 }
 
 .logo_section {
+  width: 70%;
   font-size: 150%;
   padding: 20px;
 }
@@ -516,6 +543,21 @@ li:hover {
 
   .logo_section {
     font-size: 160%;
+  }
+}
+/*ordi*/
+@media screen and (min-width: 1000px) {
+  .foreground_menus {
+    width: 68%;
+    margin-top: 0px;
+    right: 0px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .background_picture {
+    width: 30%;
+    height: 110vh;
+    border-radius: 0px 15px 15px 0px;
   }
 }
 /*@keyframes apparition {

@@ -21,6 +21,7 @@
 }
 
 .logo_section {
+    width: 70%;
     font-size: 150%;
     padding: 20px;
 }
@@ -86,5 +87,22 @@
 
     .logo_section {
         font-size: 160%;
+    }
+}
+
+/*ordi*/
+
+@media screen and (min-width: 1000px) {
+    .foreground_menus {
+        width: 68%;
+        margin-top: 0px;
+        right: 0px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .background_picture {
+        width: 30%;
+        height: 110vh;
+        border-radius: 0px 15px 15px 0px;
     }
 }

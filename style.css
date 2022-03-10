@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto";
   src: url("polices/Roboto/Roboto-regular.ttf"), url("polices/Roboto/Roboto-regular.woff"), url("polices/Roboto/Roboto-regular.otf");
@@ -30,13 +31,13 @@ a {
 button {
   box-shadow: 0.5px 0.5px 4px grey;
   border: none;
-  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   margin-top: 20px;
   margin-bottom: 35px;
   width: 170px;
   height: 40px;
   border-radius: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 button:hover {
@@ -107,15 +108,27 @@ button:hover {
   position: relative;
 }
 
-.heart_home, .heart_menu {
+.empty_heart {
+  z-index: 0;
+  font-size: 116%;
   position: absolute;
+}
+
+.full_heart {
+  z-index: 1;
   font-size: 120%;
-  width: 20px;
+  /*color: $color_primary;*/
+  position: absolute;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
 }
 
 .heart_home {
   right: 10px;
-  bottom: 40px;
+  bottom: 35px;
+  width: 20px;
 }
 
 .heart_menu {
@@ -123,18 +136,10 @@ button:hover {
   top: 27px;
 }
 
-.fa-heart:hover {
+.heart_home, .heart_menu {
   cursor: pointer;
-  color: #9356DC;
 }
 
-.heart_menu:hover {
-  color: #9356DC;
-}
-
-/*.heart:focus {
-    color: red;
-}*/
 /*footer*/
 .icon_text {
   display: flex;
@@ -514,20 +519,29 @@ li:hover, .email_link:hover {
 
 .text_food {
   position: relative;
+  width: 100%;
+}
+
+.description_and_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description_food {
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price_food {
-  width: 85%;
+  width: 100%;
   position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 100%;
+  font-size: 16px;
   font-weight: bold;
-}
-
-.text_food {
-  width: 100%;
 }
 
 .description_card, .name_card {
@@ -535,6 +549,15 @@ li:hover, .email_link:hover {
   max-width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #99E2D0;
+  color: white;
 }
 
 /*tablette*/
@@ -562,8 +585,8 @@ li:hover, .email_link:hover {
     border-radius: 0px 15px 15px 0px;
   }
 }
-/*spinner*/
-@keyframes progressive {
+/*coeur*/
+@keyframes full_heart {
   from {
     opacity: 0;
   }
@@ -571,14 +594,25 @@ li:hover, .email_link:hover {
     opacity: 1;
   }
 }
-@keyframes shift {
+/*spinner*/
+@keyframes progressive {
   from {
-    transform: translate(0%, 30%);
+    opacity: 0;
+    transform: translateY(15px);
   }
   to {
-    transform: none;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
+/*@keyframes shift {
+    from {
+        transform: translate(0%, 30%);
+    }
+    to {
+        transform: none;
+    }
+}*/
 @keyframes lds-default {
   0%, 20%, 80%, 100% {
     transform: scale(1);
@@ -604,6 +638,11 @@ li:hover, .email_link:hover {
     opacity: 0;
   }
 }
+/*coeur*/
+.full_heart:hover {
+  animation: full_heart 1s both;
+}
+
 /*spinner*/
 .lds-default {
   background-color: #9356DC;
@@ -707,7 +746,7 @@ li:hover, .email_link:hover {
 
 /*apparition progressive*/
 .card_food {
-  animation: progressive 2s backwards, shift 2s backwards;
+  animation: progressive 2s backwards;
 }
 
 .one {
@@ -749,5 +788,11 @@ li:hover, .email_link:hover {
 .ten {
   animation-delay: 1.9s;
 }
+
+/*sélecteur check
+
+.card_food:hover + .check {
+
+}*/
 
 /*# sourceMappingURL=style.css.map */

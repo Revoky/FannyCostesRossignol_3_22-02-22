@@ -33,15 +33,27 @@
     position: relative;
 }
 
-.heart_home, .heart_menu {
+.empty_heart {
+    z-index: 0;
+    font-size: 116%;
     position: absolute;
+}
+
+.full_heart {
+    z-index: 1;
     font-size: 120%;
-    width: 20px;
+    /*color: $color_primary;*/
+    position: absolute;
+    opacity: 0;
+    background-image: linear-gradient($color_secondary, $color_primary);
+    background-clip: text;
+    color: transparent;
 }
 
 .heart_home {
     right: 10px;
-    bottom: 40px;
+    bottom: 35px;
+    width: 20px;
 }
 
 .heart_menu {
@@ -49,18 +61,9 @@
     top: 27px;
 }
 
-.fa-heart:hover {
+.heart_home, .heart_menu {
     cursor: pointer;
-    color: $color_primary;
 }
-
-.heart_menu:hover {
-    color: $color_primary;
-}
-
-/*.heart:focus {
-    color: red;
-}*/
 
 /*footer*/
 

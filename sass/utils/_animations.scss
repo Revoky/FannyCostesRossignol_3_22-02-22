@@ -1,3 +1,9 @@
+/*coeur*/
+
+.full_heart:hover {
+  animation: full_heart 1s both;
+}
+
 /*spinner*/
 
 .lds-default {
@@ -90,7 +96,7 @@ animation-delay: 2s;
 /*apparition progressive*/
 
 .card_food {
-  animation: progressive 2s backwards, shift 2s backwards;
+  animation: progressive 2s backwards;
 }
 
 .one {
@@ -132,3 +138,9 @@ animation-delay: 2s;
 .ten {
   animation-delay: 1.9s;
 }
+
+/*sélecteur check
+
+.card_food:hover + .check {
+
+}*/

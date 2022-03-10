@@ -1,19 +1,48 @@
-/*@keyframes apparition {
-    0% {
-        transform: opacity(0);
+/*spinner*/
+
+@keyframes progressive {
+    from {
+        opacity:0;
     }
-    100% {
-        transform: opacity(1);
+    to {
+        opacity:1;
     }
 }
 
-.card_food {
-    animation-name: apparition;
-    animation-duration: 3000ms;
-    animation-fill-mode: both;
-}*/
+@keyframes shift {
+    from {
+        transform: translate(0%, 30%);
+    }
+    to {
+        transform: none;
+    }
+}
 
+@keyframes lds-default {
+    0%, 20%, 80%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+}
 
+/*apprition progressive*/
 
+@keyframes home_page {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 
-
+@keyframes spinner {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}

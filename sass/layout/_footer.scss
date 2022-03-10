@@ -28,7 +28,11 @@ li {
     width: 180px;
 }
 
-li:hover {
+.email_link {
+    color: white;
+}
+
+li:hover, .email_link:hover {
     color: $color_primary;
     text-shadow: 2px 2px 2px black;
     cursor: pointer

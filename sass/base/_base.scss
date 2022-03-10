@@ -12,9 +12,10 @@
          url("polices/Shrikhand/Shrikhand-Regular.otf");
 }
 
-body, .la_palette_du_gout, .la_note_enchantee, .a_la_francaise, .delice_des_sens {
+body {
     font-family: "roboto", serif;
     margin: 0%;
+    overflow-x: hidden;
 }
 
 .logo_header, .logo_header_menu, .logo_section, .logo_footer {
@@ -38,7 +39,4 @@ $color_tertiary: #99E2D0;
 $background_lighter: rgb(245, 245, 245);
 $background: rgb(228, 228, 228);
 $background_darker: rgb(55, 55, 55);
-
-body {
-    overflow-x: hidden;
-}
+$linear_radient: linear-gradient($color_secondary, $color_primary);

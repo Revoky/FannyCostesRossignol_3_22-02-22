@@ -12,7 +12,11 @@
 
 	<body>
 
-		<header>
+		<div class="spinner">
+			<div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+		</div>
+
+		<header class="home">
 			<a href="./index.html">
 				<h1 class="logo_header">ohmyfood</h1>
 			</a>
@@ -22,7 +26,7 @@
 			</a>
 		</header>
 
-		<div class="section_aside">
+		<div class="section_aside home">
 			<section class="presentation">
 				<div class="location">
 					<i class="fas fa-map-marker-alt"></i>
@@ -58,7 +62,7 @@
 			</aside>
 		</div>
 
-		<section id="restaurants" class="restaurants">
+		<section id="restaurants" class="restaurants home">
 			<h4 class="h4_home">Restaurants</h4>
 
 			<div class="card_menu">
@@ -126,19 +130,21 @@
 			</div>
 		</section>
 
-		<footer class="home_footer">
+		<footer class="home_footer home">
 			<h5 class="logo_footer">ohmyfood</h5>
 			<ul>
 				<li class="icon_text">
-					<div class="footer_icon"><i class="fas fa-utensils"></i></div>
+					<div class="footer_icon"><i class="fas fa-utensils"></i>
+					</div>
 					Proposer un restaurant
 				</li>
 				<li class="icon_text">
-					<div class="footer_icon"><i class="fas fa-hands-helping"></i></div>
+					<div class="footer_icon"><i class="fas fa-hands-helping"></i>
+					</div>
 					Devenir partenaire
 				</li>
 				<li>Mentions légales</li>
-				<li>Contact</li>
+				<li><a href="mailto:exemple.ohmyfood@gmail.com?" subject="subject text" class="email_link">Contact</a></li>
 			</ul>
 		</footer>
 		

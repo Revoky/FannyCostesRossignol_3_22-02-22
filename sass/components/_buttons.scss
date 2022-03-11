@@ -1,4 +1,4 @@
-button {
+button, .button {
     box-shadow: 0.5px 0.5px 4px grey;
     border: none;
     color: white;
@@ -8,9 +8,16 @@ button {
     height: 40px;
     border-radius: 20px;
     background: linear-gradient($color_secondary, $color_primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
 }
 
-button:hover {
+button:hover, .button:hover {
     opacity: 0.8;
     box-shadow: 0.5px 0.5px 3px black;
     cursor: pointer;
@@ -35,6 +42,10 @@ button:hover {
 /*tablette*/
 
 @media screen and (min-width: 600px) {
+
+    button, .button {
+        margin-top: 10px;
+    }
 
     .explore_restaurants_header {
         visibility: visible;

@@ -28,7 +28,7 @@ a {
   width: 100%;
 }
 
-button {
+button, .button {
   box-shadow: 0.5px 0.5px 4px grey;
   border: none;
   color: white;
@@ -38,9 +38,16 @@ button {
   height: 40px;
   border-radius: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 
-button:hover {
+button:hover, .button:hover {
   opacity: 0.8;
   box-shadow: 0.5px 0.5px 3px black;
   cursor: pointer;
@@ -64,6 +71,10 @@ button:hover {
 
 /*tablette*/
 @media screen and (min-width: 600px) {
+  button, .button {
+    margin-top: 10px;
+  }
+
   .explore_restaurants_header {
     visibility: visible;
     right: 25%;
@@ -140,6 +151,18 @@ button:hover {
   cursor: pointer;
 }
 
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  width: 60px;
+  height: 60px;
+}
+
 /*footer*/
 .icon_text {
   display: flex;
@@ -151,6 +174,10 @@ button:hover {
 
 /*ordi*/
 @media screen and (min-width: 1000px) {
+  .empty_heart, .full_heart {
+    font-size: 25px;
+  }
+
   .back {
     visibility: hidden;
   }
@@ -495,7 +522,7 @@ li:hover, .email_link:hover {
   margin-bottom: 20px;
 }
 
-.h2_menus {
+.h3_menus {
   font-size: 90%;
   font-weight: normal;
   padding-bottom: 5px;
@@ -507,18 +534,17 @@ li:hover, .email_link:hover {
 .card_food {
   border-radius: 20px;
   width: 85%;
-  max-height: 35px;
+  height: 60px;
   box-shadow: 1px 1px 2.5px black;
   display: flex;
   margin: auto;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 15px;
+  align-items: center;
+  padding-left: 15px;
   margin-top: 15px;
 }
 
 .text_food {
-  position: relative;
   width: 100%;
 }
 
@@ -527,16 +553,16 @@ li:hover, .email_link:hover {
   justify-content: space-between;
 }
 
-.description_food {
+.text_description {
   white-space: nowrap;
-  max-width: 90%;
+  width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .price_food {
   width: 100%;
-  position: absolute;
+  margin-right: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -551,18 +577,9 @@ li:hover, .email_link:hover {
   text-overflow: ellipsis;
 }
 
-.check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  background-color: #99E2D0;
-  color: white;
-}
-
 /*tablette*/
 @media screen and (min-width: 600px) {
-  .h2_menus {
+  .h3_menus {
     font-size: 100%;
   }
 
@@ -598,21 +615,13 @@ li:hover, .email_link:hover {
 @keyframes progressive {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translate(0%, 30%);
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: none;
   }
 }
-/*@keyframes shift {
-    from {
-        transform: translate(0%, 30%);
-    }
-    to {
-        transform: none;
-    }
-}*/
 @keyframes lds-default {
   0%, 20%, 80%, 100% {
     transform: scale(1);
@@ -624,7 +633,7 @@ li:hover, .email_link:hover {
 /*apprition progressive*/
 @keyframes home_page {
   from {
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
     opacity: 1;
@@ -638,9 +647,19 @@ li:hover, .email_link:hover {
     opacity: 0;
   }
 }
+/*sélecteur check
+
+@keyframes check {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 60px;
+    }
+}*/
 /*coeur*/
 .full_heart:hover {
-  animation: full_heart 1s both;
+  animation: full_heart 0.5s both;
 }
 
 /*spinner*/
@@ -792,7 +811,12 @@ li:hover, .email_link:hover {
 /*sélecteur check
 
 .card_food:hover + .check {
+  transform: translateX(-20px);
+  transform-origin: right;
+}
 
+.card_food:hover + .fa-check-circle {
+  transform: rotate(0.25turn);
 }*/
 
 /*# sourceMappingURL=style.css.map */

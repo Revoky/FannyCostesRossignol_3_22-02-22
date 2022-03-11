@@ -1,7 +1,7 @@
 /*coeur*/
 
 .full_heart:hover {
-  animation: full_heart 1s both;
+  animation: full_heart 0.5s both;
 }
 
 /*spinner*/
@@ -142,5 +142,10 @@ animation-delay: 2s;
 /*sélecteur check
 
 .card_food:hover + .check {
+  transform: translateX(-20px);
+  transform-origin: right;
+}
 
+.card_food:hover + .fa-check-circle {
+  transform: rotate(0.25turn);
 }*/

@@ -65,6 +65,18 @@
     cursor: pointer;
 }
 
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: $color_tertiary;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    width: 60px;
+    height: 60px;
+}
+
 /*footer*/
 
 .icon_text {
@@ -78,6 +90,10 @@
 /*ordi*/
 
 @media screen and (min-width: 1000px) {
+    .empty_heart, .full_heart {
+        font-size: 25px;
+    }
+
     .back {
         visibility: hidden;
     }

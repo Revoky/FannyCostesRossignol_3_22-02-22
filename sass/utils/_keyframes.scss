@@ -13,22 +13,13 @@
 @keyframes progressive {
     from {
         opacity:0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity:1;
-        transform: translateY(0px);
-    }
-}
-
-/*@keyframes shift {
-    from {
         transform: translate(0%, 30%);
     }
     to {
+        opacity:1;
         transform: none;
     }
-}*/
+}
 
 @keyframes lds-default {
     0%, 20%, 80%, 100% {
@@ -43,7 +34,7 @@
 
 @keyframes home_page {
     from {
-        opacity:0;
+        opacity:0.3;
     }
     to {
         opacity:1;
@@ -58,3 +49,14 @@
         opacity:0;
     }
 }
+
+/*sélecteur check
+
+@keyframes check {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 60px;
+    }
+}*/

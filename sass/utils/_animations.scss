@@ -139,13 +139,11 @@ animation-delay: 2s;
   animation-delay: 1.9s;
 }
 
-/*sélecteur check
+/*sélecteur check*/
 
-.card_food:hover + .check {
-  transform: translateX(-20px);
-  transform-origin: right;
+.card_food:hover>.check {
+  animation: check 1s both;
+    .fa-check-circle {
+      animation: rotate 1s both;
+    }
 }
-
-.card_food:hover + .fa-check-circle {
-  transform: rotate(0.25turn);
-}*/

@@ -50,13 +50,26 @@
     }
 }
 
-/*sélecteur check
+/*sélecteur check*/
 
 @keyframes check {
-    from {
+    0% {
         width: 0px;
+        transition: right 1s, -webkit-transform 1s;
+        transform: translateX(100%);
     }
-    to {
+    100% {
         width: 60px;
+        transition: right 1s, -webkit-transform 1s;
+        transform: translateX(0%);
     }
-}*/
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

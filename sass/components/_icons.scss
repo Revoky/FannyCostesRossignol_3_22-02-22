@@ -45,7 +45,7 @@
     /*color: $color_primary;*/
     position: absolute;
     opacity: 0;
-    background-image: linear-gradient($color_secondary, $color_primary);
+    background-image: linear-gradient($color_primary, $color_secondary);
     background-clip: text;
     color: transparent;
 }
@@ -73,7 +73,7 @@
     background-color: $color_tertiary;
     color: white;
     border-radius: 0px 20px 20px 0px;
-    width: 60px;
+    width: 0px;
     height: 60px;
 }
 

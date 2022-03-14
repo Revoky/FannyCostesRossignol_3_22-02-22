@@ -51,6 +51,7 @@
     align-items: center;
     padding-left: 15px;
     margin-top: 15px;
+    overflow: hidden;
 }
 
 .text_food {
@@ -63,6 +64,7 @@
 }
 
 .text_description {
+    font-size: 90%;
     white-space: nowrap;
     width: 90%;
     overflow: hidden;
@@ -70,7 +72,7 @@
 }
 
 .price_food {
-    width: 100%;
+    width: 20%;
     margin-right: 15px;
     display: flex;
     justify-content: flex-end;

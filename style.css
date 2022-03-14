@@ -131,7 +131,7 @@ button:hover, .button:hover {
   /*color: $color_primary;*/
   position: absolute;
   opacity: 0;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   color: transparent;
 }
@@ -159,7 +159,7 @@ button:hover, .button:hover {
   background-color: #99E2D0;
   color: white;
   border-radius: 0px 20px 20px 0px;
-  width: 60px;
+  width: 0px;
   height: 60px;
 }
 
@@ -298,10 +298,6 @@ footer, .menus_footer, .footer_note_enchantee {
   color: white;
   background-color: #373737;
   line-height: 140%;
-}
-
-.home_footer {
-  padding: none;
 }
 
 .logo_footer {
@@ -542,6 +538,7 @@ li:hover, .email_link:hover {
   align-items: center;
   padding-left: 15px;
   margin-top: 15px;
+  overflow: hidden;
 }
 
 .text_food {
@@ -554,6 +551,7 @@ li:hover, .email_link:hover {
 }
 
 .text_description {
+  font-size: 90%;
   white-space: nowrap;
   width: 90%;
   overflow: hidden;
@@ -561,7 +559,7 @@ li:hover, .email_link:hover {
 }
 
 .price_food {
-  width: 100%;
+  width: 20%;
   margin-right: 15px;
   display: flex;
   justify-content: flex-end;
@@ -647,16 +645,27 @@ li:hover, .email_link:hover {
     opacity: 0;
   }
 }
-/*sélecteur check
-
+/*sélecteur check*/
 @keyframes check {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 60px;
-    }
-}*/
+  0% {
+    width: 0px;
+    transition: right 1s, -webkit-transform 1s;
+    transform: translateX(100%);
+  }
+  100% {
+    width: 60px;
+    transition: right 1s, -webkit-transform 1s;
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*coeur*/
 .full_heart:hover {
   animation: full_heart 0.5s both;
@@ -808,15 +817,12 @@ li:hover, .email_link:hover {
   animation-delay: 1.9s;
 }
 
-/*sélecteur check
-
-.card_food:hover + .check {
-  transform: translateX(-20px);
-  transform-origin: right;
+/*sélecteur check*/
+.card_food:hover > .check {
+  animation: check 1s both;
 }
-
-.card_food:hover + .fa-check-circle {
-  transform: rotate(0.25turn);
-}*/
+.card_food:hover > .check .fa-check-circle {
+  animation: rotate 1s both;
+}
 
 /*# sourceMappingURL=style.css.map */

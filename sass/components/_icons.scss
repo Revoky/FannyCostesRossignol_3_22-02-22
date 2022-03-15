@@ -42,7 +42,6 @@
 .full_heart {
     z-index: 1;
     font-size: 120%;
-    /*color: $color_primary;*/
     position: absolute;
     opacity: 0;
     background-image: linear-gradient($color_primary, $color_secondary);
@@ -53,7 +52,7 @@
 .heart_home {
     right: 10px;
     bottom: 35px;
-    width: 20px;
+    width: 30px;
 }
 
 .heart_menu {

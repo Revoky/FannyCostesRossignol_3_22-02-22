@@ -128,7 +128,6 @@ button:hover, .button:hover {
 .full_heart {
   z-index: 1;
   font-size: 120%;
-  /*color: $color_primary;*/
   position: absolute;
   opacity: 0;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -139,7 +138,7 @@ button:hover, .button:hover {
 .heart_home {
   right: 10px;
   bottom: 35px;
-  width: 20px;
+  width: 30px;
 }
 
 .heart_menu {
@@ -543,6 +542,7 @@ li:hover, .email_link:hover {
 
 .text_food {
   width: 100%;
+  min-width: 1%;
 }
 
 .description_and_price {
@@ -824,5 +824,9 @@ li:hover, .email_link:hover {
 .card_food:hover > .check .fa-check-circle {
   animation: rotate 1s both;
 }
+
+/*.check {
+  transition: all 0.35s ease-in-out;
+}*/
 
 /*# sourceMappingURL=style.css.map */

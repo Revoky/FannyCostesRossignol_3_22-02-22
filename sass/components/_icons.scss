@@ -47,6 +47,8 @@
     background-image: linear-gradient($color_primary, $color_secondary);
     background-clip: text;
     color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .heart_home {
